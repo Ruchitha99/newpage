@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
+    <style>
+         a.disabled:hover {
+    cursor:not-allowed
+ }
+    </style>
 <body>
 
-
-
+  
 <h1>GOOD AFTERNOON</h1>
 
-<button id="myBtn" onclick="myFunction()">SUBMIT</button>
-
+<button id="myBtn" onclick="myFunction()">
+<div>
+    <a class="disabled" data-toggle="modal" data-target="#notAvailable">Submit</a>
+  </div></button>
 <script>
 function myFunction() {
   document.getElementById("myBtn").disabled = true;
+  
 }
 </script>
 
